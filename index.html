@@ -1,27 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StrategyGame</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Трагедия снежного человека 2...</h1>
-    <button id="attackenemy">Атаковать врага</button>
-    <br>
-    <br>
-    <div id = "result-wrapper">
-        <div id="result">
-            Драки не избежать! Вы встретили того кто вас заказал!
+    <div class="startPopUp">
+        <div class="startPopUpTextBlock">
+            <div class="closeButton">X</div>    
+            <div class="startPopUpTextBlockInnerText">
+                У вас был очень тяжелый день. Вы потратили из бюджета кучу денег чтобы быть во всеоружии против снега.
+                Вы устроили парад новой снегоуборочной техники на главных улицах города чтобы продемонстрировать зиме и снегу свою готовность отстоять свою честь и честь города.
+                Всё шло спокойно. Но, лишь до того момента как не настал снегопад!
+                И тут вы внезапно встречаете агрессивно настроенного первого снеговика! что вы хотите с ним сделать!???
+            </div>
+            <div class="clear"></div>
+            <button class="startGame">НАПАСТЬ</button>
         </div>
-        <img src="images.jpg" alt="" id="enemy-image">
-        <div id="enemy-status-bar-wrapper">
-            <div id="enemy-health-status-bar">ЗДОРОВЬЕ ВРАГА</div>
-            
-        </div>        
     </div>
-    
-<script src="script.js"></script>
+    <div class="wrapper">
+    <div class="gameName">
+        <h1>Трагедия снежного человека 2...</h1>
+    </div>
+    <div class="content">
+        <div class="playerUiWrapper">
+            <div class="player-status-bar-wrapper ">
+                <img src="biglove.jpg" alt="" class="player-image">
+                <div class="playerName">BigLove (Вы)</div>
+                <div class="attackUiBlock">
+                    <button id="attackEnemy">Атаковать врага</button>
+                </div>
+                <div class="clear"></div>
+                <div class="player-health-status-bar get-demage-animation-Hp-Bar">100</div>
+            </div>
+        </div>
+        <div class="battleChatWrapper">
+            <div id="battleTimer">Таймер хода : 0</div>
+            <div id="step">Ходит BigLove</div>
+            <div id="battleChat">
+                <p id="firstChatMessage">Чат: Бей врага!</p>
+            </div>
+        </div>
+        <div class="computerUiWrapper">
+            <div class="enemy-status-bar-wrapper">
+                <img src="snowman.jpg" alt="" class="enemy-image">
+                <div class="computerName">Снежный человек...</div>
+                <div class="clear"></div>
+                <div class="enemy-health-status-bar get-demage-animation-Hp-Bar">100</div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    </div>
+</div>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
