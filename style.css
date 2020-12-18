@@ -54,7 +54,7 @@ body{
    cursor:pointer;
 }
 .wrapper{
-    width:1400px;
+    min-width:1400px;
 }
 .content{
     width:1400px;
